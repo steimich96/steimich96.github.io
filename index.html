@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Michael Steiner</title>
+
+    <meta name="author" content="Michael Steiner">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://fakeimg.pl/16x16" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p class="name" style="text-align: center;">Michael Steiner</p>
+                                    <p>I am currently a PhD student at Graz University of Technology at the Institute of Computer Graphics and Vision, supervised by <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.</p>
+                                    <p>
+                                        In 2023 I received my Master's Degree (with distiction) for Computer Science at Graz University of Technology, with a Major in Visual Computing, and Minor in Machine Learning. 
+                                        My Master Thesis tackled accelerated NeRF rendering on the basis of <a href="https://depthoraclenerf.github.io/">DONeRF</a>.
+                                    </p>
+                                    <p style="text-align:center">
+                                        <a href="mailto:michael.steiner@tugraz.at">Email</a> &nbsp;/&nbsp;
+                                        <!-- <a href="">CV</a> &nbsp;/&nbsp; -->
+                                        <!-- <a href="">Bio</a> &nbsp;/&nbsp; -->
+                                        <a href="https://scholar.google.com/citations?user=Pbtgcz8AAAAJ">Scholar</a> &nbsp;/&nbsp;
+                                        <a href="https://github.com/steimich96">Github</a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:40%;max-width:40%">
+                                    <a href="imgs/SteinerMichael.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 45%;" alt="profile photo" src="imgs/SteinerMichael.jpg" class="hoverZoomLink"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:10px;width:100%;vertical-align:middle">
+                                    <h2>Research</h2>
+                                    <p>
+                                        My main interest lies in <strong>Parallel Compute</strong> and applying it to all areas of research, most recently in the field of computer graphics.
+                                        Our research currently focuses on <strong>Novel View Synthesis</strong> with NeRFs and 3D Gaussian Splatting, and <strong>Split Rendering</strong>.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr onmouseout="stopthepop_stop()" onmouseover="stopthepop_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='stopthepop_image'>
+                                            <img src="vids/stopthepop2024.gif" width="100%">
+                                        </div>
+                                        <img src='imgs/papers/stopthepop2024.jpg' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function stopthepop_start() {
+                                            document.getElementById('stopthepop_image').style.opacity = "1";
+                                        }
+
+                                        function stopthepop_stop() {
+                                            document.getElementById('stopthepop_image').style.opacity = "0";
+                                        }
+                                        stopthepop_stop()
+                                    </script>
+                                </td>
+                                <!-- <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="https://fakeimg.pl/600x600" alt="clean-usnob" width="160" height="160">
+                                </td> -->
+                                <td width="75%" valign="middle">
+                                    <span class="papertitle">StopThePop: Sorted Gaussian Splatting for View-Consistent Real-Time Rendering</span>
+                                    <br>
+                                    <strong>Michael Steiner</strong>*,
+                                    <a href="https://r4dl.github.io/">Lukas Radl<a>*,
+                                    <a href="https://dabeschte.github.io/">Mathias Parger</a>,
+                                    <a href="https://scholar.google.at/citations?user=pkqf2mgAAAAJ&hl=de">Alexander Weinrauch</a>,<br/>
+                                    <a href="https://snosixtyboo.github.io/">Bernhard Kerbl</a>,
+                                    <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                                    <br>
+                                    <em>arXiv</em>, 2024.
+                                    <p>
+                                        3D Gaussian Splatting performs an approximate global sort of primitives, leading to undesireable popping artifacts.
+                                        By hierarchically sorting primitives in a tile-based rasterizer, we allow for view-consistent rendering while maintaining real-time performance.
+                                    </p>
+                                    <p style="text-align:left">
+                                        <a href="https://arxiv.org/pdf/2402.00525.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                                        <a href=""><img style="height:27px; margin: 3.5px; padding: 1.5px; opacity: 25%" src="imgs/icons/wpage.png" title="Webpage"></a>
+                                        <a href=""><img style="height:27px; margin: 3.5px; padding: 1.5px; opacity: 25%" src="imgs/icons/github.png" title="Code"></a>
+                                        <a href=""><img style="height:30px; margin: 3.5px; opacity: 25%" src="imgs/icons/vid.png" title="Video"></a>
+                                        <a href=""><img style="height:29px; opacity: 25%; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png"></a>
+                                        <a href="bibs/radl2024stopthepop.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr onmouseout="frustum_stop()" onmouseover="frustum_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='frustum_image'><video width=100% muted autoplay loop>
+                                            <source src="vids/frustum2024.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+                                        </div>
+                                        <img src='imgs/papers/frustum2024.png' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function frustum_start() {
+                                            document.getElementById('frustum_image').style.opacity = "1";
+                                        }
+
+                                        function frustum_stop() {
+                                            document.getElementById('frustum_image').style.opacity = "0";
+                                        }
+                                        frustum_stop()
+                                    </script>
+                                </td>
+                                <!-- <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="https://fakeimg.pl/600x600" alt="clean-usnob" width="160" height="160">
+                                </td> -->
+                                <td width="75%" valign="middle">
+                                    <span class="papertitle">Frustum Volume Caching for Accelerated NeRF Rendering</span>
+                                    <br>
+                                    <strong>Michael Steiner</strong>,
+                                    <a href="https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=ABF48312D534DD6E">Thomas Köhler</a>,
+                                    <a href="https://r4dl.github.io/">Lukas Radl<a>,
+                                    <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                                    <br>
+                                    <em>arXiv</em>, 2024.
+                                    <p>
+                                        We accelerate NeRF rendering of high-quality video sequences by caching and temporally reusing NeRF latent codes.
+                                        Our frustum-aligned volumetric cache datastructure together with our novel view-dependent cone encoding allow for smaller latent codes and fast re-evaluation, leading to render speed-ups of up to 2x for our <span style="white-space: nowrap">Instant-NGP</span> based model.
+                                    </p>
+                                    <p style="text-align:left">
+                                        <a href=""><img style="height:28px; margin: 3.5px; padding: 1px; opacity: 25%" src="imgs/icons/pdf.png" title="Paper"></a>
+                                        <a href=""><img style="height:27px; margin: 3.5px; padding: 1.5px; opacity: 25%" src="imgs/icons/wpage.png" title="Webpage"></a>
+                                        <a href=""><img style="height:27px; margin: 3.5px; padding: 1.5px; opacity: 25%" src="imgs/icons/github.png" title="Code"></a>
+                                        <a href=""><img style="height:30px; margin: 3.5px; opacity: 25%" src="imgs/icons/vid.png" title="Video"></a>
+                                        <a href=""><img style="height:29px; opacity: 25%; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png"></a>
+                                        <a href="bibs/steiner2024frustum.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="imgs/papers/laenerf2024.png" alt="clean-usnob" width="160" height="160">
+                                </td>
+                                <td width="75%" valign="middle">
+                                    <a href="https://r4dl.github.io/LAENeRF/">
+                                        <span class="papertitle">LAENeRF: Local Appearance Editing of Neural Radiance Fields</span>
+                                    </a>
+                                    <br>
+                                    <strong>Lukas Radl</strong>,
+                                    <a href="https://scholar.google.com/citations?user=Pbtgcz8AAAAJ&hl=de">Michael Steiner</a>,
+                                    <a href="https://scholar.google.com/citations?user=3yD4NZgAAAAJ&hl=de">Andreas Kurz</a>,
+                                    <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                                    <br>
+                                    <em>CVPR</em>, 2024.
+                                    <p>Locally Stylized Neural Radiance Fields via point-based 3D style transfer with geometry-aware
+                                        losses - reduced background artefacts, more detail retention and view-consistency.
+                                        <!--                            Our method reduces background artefacts while retaining fine details and view-consistency.-->
+                                    </p>
+                                    <p style="text-align:left">
+                                        <a href="https://arxiv.org/pdf/2312.09913.pdf"><img style="height:27px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                                        <a href="https://r4dl.github.io/LAENeRF/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
+                                        <a href="https://github.com/r4dl/LAENeRF"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
+                                        <a href="https://www.youtube.com/watch?v=HwQ1x0Fb2Qc"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/vid.png" title="Video"></a>
+                                        <a href="https://drive.google.com/file/d/1y8e2q-6HJz2YcBoWqZJl9OR3NhMYVPgT/view?usp=sharing"><img style="height:29px; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png" title="Data"></a>
+                                        <a href="bibs/radl2023laenerf.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                                    </p>
+                                </td>
+                            </tr>
+                            <!-- <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <img src="imgs/papers/analyzing2024.png" alt="clean-usnob" width="160" height="160">
+                                </td>
+                                <td width="75%" valign="middle">
+                                    <a href="https://r4dl.github.io/nerfinternals/">
+                                        <span class="papertitle">Analyzing the Internals of Neural Radiance Fields</span>
+                                    </a>
+                                    <br>
+                                    <strong>Lukas Radl</strong>,
+                                    <a href="https://scholar.google.com/citations?user=3yD4NZgAAAAJ&hl=de">Andreas Kurz</a>,
+                                    <a href="https://scholar.google.com/citations?user=Pbtgcz8AAAAJ&hl=de">Michael Steiner</a>,
+                                    <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                                    <br>
+                                    <em>CVPR Workshop on Neural Rendering Intelligence</em>, 2024.
+                                    <p>Using density estimates derived from activations for inverse transform sampling in NeRFs
+                                        allows for faster inference and comparable visual quality.
+                                    </p>
+                                    <p style="text-align:left">
+                                        <a href="https://arxiv.org/pdf/2306.00696.pdf"><img style="height:27px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                                        <a href="https://r4dl.github.io/nerfinternals/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
+                                        <a href="https://github.com/r4dl/nerfinternals"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
+                                        <img style="height:30px; margin: 3.5px; opacity: 25%" src="imgs/icons/vid.png"> <a href="https://drive.google.com/file/d/1whGVEQ-LvpsgYZGxQvOA5tYcJ8N_sc-9/view">
+                                        <img style="height:29px; margin: 3.5px; padding: 0.5px"src="imgs/icons/data.png" title="Data"></a>
+                                        <a href="bibs/radl2024nerfinternals.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                                    </p>
+                                </td>
+                            </tr> -->
+                            <!-- <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="one">
+                                        <div class="two" id='bog_image'><video width=100% muted autoplay loop>
+                                                <source src="images/bog.jpg" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video></div>
+                                        <img src='images/bog.jpg' width=100%>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function bog_start() {
+                                            document.getElementById('bog_image').style.opacity = "1";
+                                        }
+
+                                        function bog_stop() {
+                                            document.getElementById('bog_image').style.opacity = "0";
+                                        }
+                                        bog_stop()
+                                    </script>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="https://r4dl.github.io/StopThePop">
+                                        <span class="papertitle">StopThePop: Sorted Gaussian Splatting for
+                                            View-Consistent Real-Time Rendering</span>
+                                    </a>
+                                    <br>
+                                    <a href="">Michael Steiner*</a>,
+                                    <a href="https://r4dl.github.io/">Lukas Radl*</a>,
+                                    <br>
+                                    <em>SIGGRAPH</em>, 2024
+                                    <br>
+                                    <a href="">project page</a>
+                                    /
+                                    <a href="">video</a>
+                                    /
+                                    <a href="">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        Applying anti-aliasing to a discrete opacity grid lets you render a hard
+                                        representation into a soft image, and this enables highly-detailed mesh
+                                        recovery.
+                                    </p>
+                                </td>
+                            </tr> -->
+
+                        </tbody>
+                    </table>
+
+
+                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>Miscellaneous</h2>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table width="100%" align="center" border="0" cellpadding="20">
+                        <tbody>
+
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle"><img src="https://fakeimg.pl/200x200"></td>
+                                <td width="75%" valign="center">
+                                    <a href="">XYZ</a>
+                                    <br>
+                                    <a href="">XYZ</a>
+                                    <br>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:0px">
+                                    <br>
+                                    <p style="text-align:right;font-size:small;">
+                                        Thank you to <a href="https://jonbarron.info">Jon Barron</a> for providing the
+                                        <a href="https://github.com/jonbarron/jonbarron_website">public source code</a>
+                                        of his website.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+    </table>
+</body>
+
+</html>
