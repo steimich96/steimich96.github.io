@@ -73,7 +73,7 @@
     color: #f09228;
     text-decoration: none;
   }
-  
+
   body,
   td,
   th,
@@ -98,7 +98,7 @@
   
   .papertitle {
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
   }
   
@@ -110,14 +110,17 @@
   }
   
   .one {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     position: relative;
+    display:block;
+    margin:auto;
+    margin-bottom:5%
   }
   
   .two {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     transition: opacity .2s ease-in-out;
     -moz-transition: opacity .2s ease-in-out;
