@@ -21,7 +21,7 @@
                 <p class="name" style="text-align: center;">Michael Steiner</p>
                 <br>
                 <p>
-                    I am currently a PhD student at Graz University of Technology at the Institute of Visual Computing (IVC; formerly Institute of Computer Graphics and Vision - ICG), supervised by <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                    I am currently a PhD student at Graz University of Technology at the Institute of Visual Computing (IVC), supervised by <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
                     Most of my recent work focused on novel view synthesis and neural rendering.
                     My personal research interests lie in Visual Computing, Machine Learning, and all topics concerning Parallel Compute in general.
                 </p>
@@ -49,6 +49,7 @@
             <h2 style="text-align:center;margin:10pt">Research Papers</h2>
         </div>
 
+        <!-- AAA-Gaussians -->
         <div class="row" style="margin-top:10pt">
             <div class="col-md-3" onmouseout="aaa_stop()" onmouseover="aaa_start()">
                 <div class="mx-auto">
@@ -97,6 +98,60 @@
             </div>
         </div>
         
+
+        <!-- Image-Based Spatio-Temporal Interpolation -->
+        <div class="row" style="margin-top:10pt">
+            <div class="col-md-3" onmouseout="splinter_stop()" onmouseover="splinter_start()">
+                <div class="mx-auto">
+                    <div class="one">
+                        <div class="two" id='splinter_image'>
+                            <video style="width:100%" muted autoplay loop>
+                                <source src="vids/splinter2025.mp4" type="video/mp4">Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <img src='imgs/papers/splinter2025.png' style="width:100%">
+                    </div>
+                    <script type="text/javascript">
+                        function splinter_start() {
+                            document.getElementById('splinter_image').style.opacity = "1";
+                        }
+
+                        function splinter_stop() {
+                            document.getElementById('splinter_image').style.opacity = "0";
+                        }
+                        splinter_stop()
+                    </script>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <span class="papertitle">Image-Based Spatio-Temporal Interpolation for Split Rendering</span>
+                <br>
+                <strong>Michael Steiner</strong>*,
+                <a href="https://derthomy.github.io/">Thomas Köhler</a>*,
+                <a href="https://r4dl.github.io/">Lukas Radl<a>,
+                <a href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en">Brian Budge<a>,
+                <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                <br>
+                <em>High-Performance Graphics</em> <em>(CGF)</em>, 2025.
+                <br> <br>
+                <p>
+                    Our method enables spatio-temporal interpolation via bidirectional reprojection to efficiently generate intermediate frames in a split rendering setting, while limiting the communication cost and relying purely on image-based rendering.
+                    Furthermore, our method is robust to modest connectivity issues and handles effects such as dynamic smooth shadows.
+                </p>
+                <p style="text-align:left">
+                    <a href="https://derthomy.github.io/ImageBasedSpatioTemporalInterpolation/static/paper/Image_Based_Spatio_Temporal_Interpolation_for_Split_Rendering.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                    <a href="https://derthomy.github.io/ImageBasedSpatioTemporalInterpolation/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
+                    <a href="https://github.com/DerThomy/ImageBasedSpatioTemporalInterpolation"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
+                    <a href="https://youtu.be/IBHKeBGDHVg"><img style="height:30px; margin: 3.5px;" src="imgs/icons/vid.png" title="Video"></a>
+                    <a href="https://drive.google.com/file/d/1U4uUS6L-rxr1jFrJ-b991SQP63G10hkA/view"><img style="height:29px;; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png"></a>
+                    <a href="bibs/steiner2024splitrendering.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- StopThePop -->
         <div class="row" style="margin-top:10pt">
             <div class="col-md-3" onmouseout="stopthepop_stop()" onmouseover="stopthepop_start()">
                 <div class="mx-auto">
@@ -146,7 +201,7 @@
             </div>
         </div>
 
-
+        <!-- Frustum Volume Caching -->
         <div class="row" style="margin-top:10pt">
             <div class="col-md-3" onmouseout="frustum_stop()" onmouseover="frustum_start()">
                 <div class="mx-auto">
@@ -170,6 +225,7 @@
                     </script>
                 </div>
             </div>
+
             <div class="col-md-9">
                 <span class="papertitle">Frustum Volume Caching for Accelerated NeRF Rendering</span>
                 <br>
@@ -196,7 +252,7 @@
             </div>
         </div>
 
-
+        <!-- LAENerf -->
         <div class="row" style="margin-top:10pt">
             <div class="col-md-3" onmouseout="laenerf_stop()" onmouseover="laenerf_start()">
                 <div class="mx-auto">
@@ -246,6 +302,7 @@
             </div>
         </div>
 
+        <!-- Nerf-Internals -->
         <div class="row" style="margin-top:10pt">
             <div class="col-md-3">
                 <img src="imgs/papers/nerfinternals2024.png" alt="clean-usnob" class="one">
