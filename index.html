@@ -27,8 +27,8 @@
                 </p>
                 <p>
                     In 2023 I received my Master's Degree (with distiction) for Computer Science at Graz University of Technology, with a Major/Minor in Visual Computing/Machine Learning.
-                    My Master Thesis tackled accelerated NeRF rendering on the basis of <a href="https://depthoraclenerf.github.io/">DONeRF</a>.
-<!--                     Before and during the beginning of my academic career, I worked 4 years as a <span style="white-space: nowrap">full-stack</span> (ASP.NET/JS) developer. -->
+                    <!-- My Master Thesis tackled accelerated NeRF rendering on the basis of <a href="https://depthoraclenerf.github.io/">DONeRF</a>. -->
+                    <!-- Before and during the beginning of my academic career, I worked 4 years as a <span style="white-space: nowrap">full-stack</span> (ASP.NET/JS) developer. -->
                 </p>
                 <p style="text-align:center">
                     <a href="mailto:michael.steiner@tugraz.at">Email</a> &nbsp;/&nbsp;
@@ -48,6 +48,55 @@
         <div class="row">
             <h2 style="text-align:center;margin:10pt">Research Papers</h2>
         </div>
+
+        <div class="row" style="margin-top:10pt">
+            <div class="col-md-3" onmouseout="aaa_stop()" onmouseover="aaa_start()">
+                <div class="mx-auto">
+                    <div class="one">
+                        <div class="two" id='aaagaussians_image'>
+                            <video style="width:100%" muted autoplay loop>
+                                <source src="vids/aaagaussians2025.mp4" type="video/mp4">Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <img src='imgs/papers/aaagaussians2025.png' style="width:100%">
+                    </div>
+                    <script type="text/javascript">
+                        function aaa_start() {
+                            document.getElementById('aaagaussians_image').style.opacity = "1";
+                        }
+                        function aaa_stop() {
+                            document.getElementById('aaagaussians_image').style.opacity = "0";
+                        }
+                        aaa_stop()
+                    </script>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <span class="papertitle">AAA-Gaussians: Anti-Aliased and Artifact-Free 3D Gaussian Rendering</span>
+                <br><strong>Michael Steiner</strong>*,
+                <a href="https://derthomy.github.io/">Thomas Köhler</a>*,
+                <a href="https://r4dl.github.io/">Lukas Radl<a>,
+                <a href="https://scholar.google.com/citations?user=J_Jm3Y4AAAAJ&hl=en">Felix Windisch<a>,
+                <a href="https://schmalstieg.github.io/">Dieter Schmalstieg<a>,
+                <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                <br>
+                <em>ICCV (Poster Highlight)</em>, 2025.
+                <br><br>
+                <p>
+                    We introduce an adaptive 3D smoothing filter to mitigate aliasing and present a stable view-space bounding method that eliminates popping artifacts when Gaussians extend beyond the view frustum.
+                    Our method achieves state-of-the-art quality on in-distribution evaluation sets and significantly outperforms other approaches for out-of-distribution views.
+                </p>
+                <p style="text-align:left">
+                    <a href="https://arxiv.org/abs/2504.12811"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                    <a href="https://derthomy.github.io/AAA-Gaussians/"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons//wpage.png" title="Webpage"></a>
+                    <a href="https://github.com/DerThomy/AAA-Gaussians"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons//github.png" title="Code"></a>
+                    <a href="https://youtu.be/KEwxiN7zj7I"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons//vid.png" title="Video"></a>
+                    <a href="https://cloud.tugraz.at/index.php/s/fsDoKofW4T63xN2?openfile=true"><img img="" class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png" title="Data"></a>
+                    <a href="bibs/steiner2025aaags.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                </p>
+            </div>
+        </div>
+        
         <div class="row" style="margin-top:10pt">
             <div class="col-md-3" onmouseout="stopthepop_stop()" onmouseover="stopthepop_start()">
                 <div class="mx-auto">
@@ -125,7 +174,7 @@
                 <span class="papertitle">Frustum Volume Caching for Accelerated NeRF Rendering</span>
                 <br>
                 <strong>Michael Steiner</strong>,
-                <a href="https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=ABF48312D534DD6E">Thomas Köhler</a>,
+                <a href="https://derthomy.github.io/">Thomas Köhler</a>,
                 <a href="https://r4dl.github.io/">Lukas Radl<a>,
                 <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
                 <br>
