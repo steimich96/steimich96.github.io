@@ -9,7 +9,7 @@
     
     <meta name="author" content="Michael Steiner">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://fakeimg.pl/16x16" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="https://fakeimg.pl/16x16" type="image/x-icon"> -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
@@ -17,8 +17,13 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <p class="name" style="text-align: center;">Michael Steiner</p>
+            <p class="name" style="text-align: center;">Michael Steiner</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-push-9">
+                <a href="imgs/SteinerMichael.jpg"><img class="img-responsive center-block" style="max-height:200px; border-radius:45%" alt="profile photo" src="imgs/SteinerMichael.jpg"></a>
+            </div>
+            <div class="col-md-9 col-md-pull-3">
                 <br>
                 <p>
                     I am currently a PhD student at Graz University of Technology at the Institute of Visual Computing (IVC), supervised by <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
@@ -38,9 +43,6 @@
                     <a href="https://github.com/steimich96">Github</a>
                 </p>
             </div>
-            <div class="col-md-4">
-                <a href="imgs/SteinerMichael.jpg"><img style="width:50%;border-radius:45%;display:block;margin:auto;margin-top:5%" alt="profile photo" src="imgs/SteinerMichael.jpg"></a>
-            </div>
         </div>
     </div>
 
@@ -49,8 +51,43 @@
             <h2 style="text-align:center;margin:10pt">Research Papers</h2>
         </div>
 
+        <!-- SOF -->
+        <div class="row" style="padding-top:10pt">
+            <div class="col-md-3">
+                <img src="imgs/papers/sof2025.png" alt="clean-usnob" class="one">
+            </div>
+            <div class="col-md-9">
+                <span class="papertitle">SOF: Sorted Opacity Fields for Fast Unbounded Surface Reconstruction</span>
+                <br>
+                <strong><a href="https://r4dl.github.io/">Lukas Radl<a></strong>,
+                <a href="https://scholar.google.com/citations?user=J_Jm3Y4AAAAJ&hl=en/">Felix Windisch</a>,
+                <a href="https://scholar.google.com/citations?user=q3KITmQAAAAJ&hl=en">Thomas Deixelberger</a>,
+                <a href="https://jozef.hladky.de/">Jozef Hladky</a>,
+                <strong>Michael Steiner</strong>,
+                <a href="https://www.vis.uni-stuttgart.de/team/Schmalstieg/">Dieter Schmalstieg</a>,
+                <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                <br>
+                <em>SIGGRAPH Asia</em>, 2025.
+                <br><br>
+                <p>
+                    We analyze and improve Gaussian Opacity Fields, and incorporate per-pixel sorting, exact depth and novel losses 
+                    to enable rapid extraction of unbounded meshes from 3D Gaussians.
+                </p>
+                <p style="text-align:left">
+                    <a class="ai-symbol" href="https://www.arxiv.org/pdf/2506.19139" title="Paper"><i class="fas fa-file-pdf "></i></a>
+                    <a class="ai-symbol" href="https://r4dl.github.io/SOF" title="Webpage"><i class="fas fa-globe "></i></a>
+                    <a href="https://www.arxiv.org/pdf/2506.19139"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                    <a href="https://r4dl.github.io/SOF"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
+                    <img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px; opacity: 25%" src="imgs/icons//github.png" title="Code">
+                    <img class="ai-symbol" style="height:27px; margin: 3.5px; opacity: 25%" src="imgs/icons/play-circle-fill.svg" title="Video">
+                    <img class="ai-symbol" style="height:30px; margin: 3.5px; opacity: 25%" src="imgs/icons/database.svg" title="Data">
+                    <a href="bibs/radl2025sof.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                </p>
+            </div>
+        </div>
+
         <!-- AAA-Gaussians -->
-        <div class="row" style="margin-top:10pt">
+        <div class="row highlight" style="padding-top:10pt">
             <div class="col-md-3" onmouseout="aaa_stop()" onmouseover="aaa_start()">
                 <div class="mx-auto">
                     <div class="one">
@@ -74,8 +111,9 @@
             </div>
             <div class="col-md-9">
                 <span class="papertitle">AAA-Gaussians: Anti-Aliased and Artifact-Free 3D Gaussian Rendering</span>
-                <br><strong>Michael Steiner</strong>*,
-                <a href="https://derthomy.github.io/">Thomas Köhler</a>*,
+                <br>
+                <strong>Michael Steiner</strong>*,
+                <strong><a href="https://derthomy.github.io/">Thomas Köhler</a></strong>*,
                 <a href="https://r4dl.github.io/">Lukas Radl<a>,
                 <a href="https://scholar.google.com/citations?user=J_Jm3Y4AAAAJ&hl=en">Felix Windisch<a>,
                 <a href="https://schmalstieg.github.io/">Dieter Schmalstieg<a>,
@@ -91,16 +129,16 @@
                     <a href="https://arxiv.org/abs/2504.12811"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
                     <a href="https://derthomy.github.io/AAA-Gaussians/"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons//wpage.png" title="Webpage"></a>
                     <a href="https://github.com/DerThomy/AAA-Gaussians"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons//github.png" title="Code"></a>
-                    <a href="https://youtu.be/KEwxiN7zj7I"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons//vid.png" title="Video"></a>
-                    <a href="https://cloud.tugraz.at/index.php/s/fsDoKofW4T63xN2?openfile=true"><img img="" class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png" title="Data"></a>
-                    <a href="bibs/steiner2025aaags.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                    <a href="https://youtu.be/KEwxiN7zj7I"><img class="ai-symbol" style="height:27px; margin: 3.5px" src="imgs/icons/play-circle-fill.svg" title="Video"></a>
+                    <a href="https://cloud.tugraz.at/index.php/s/fsDoKofW4T63xN2?openfile=true"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/database.svg" title="Data"></a>
+                    <a href="bibs/steiner2025aaags.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
                 </p>
             </div>
         </div>
         
 
         <!-- Image-Based Spatio-Temporal Interpolation -->
-        <div class="row" style="margin-top:10pt">
+        <div class="row" style="padding-top:10pt">
             <div class="col-md-3" onmouseout="splinter_stop()" onmouseover="splinter_start()">
                 <div class="mx-auto">
                     <div class="one">
@@ -122,13 +160,12 @@
                         splinter_stop()
                     </script>
                 </div>
-            </div>
-            
+            </div>            
             <div class="col-md-9">
                 <span class="papertitle">Image-Based Spatio-Temporal Interpolation for Split Rendering</span>
                 <br>
                 <strong>Michael Steiner</strong>*,
-                <a href="https://derthomy.github.io/">Thomas Köhler</a>*,
+                <strong><a href="https://derthomy.github.io/">Thomas Köhler</a></strong>*,
                 <a href="https://r4dl.github.io/">Lukas Radl<a>,
                 <a href="https://scholar.google.com/citations?user=z67HnEwAAAAJ&hl=en">Brian Budge<a>,
                 <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
@@ -143,16 +180,67 @@
                     <a href="https://derthomy.github.io/ImageBasedSpatioTemporalInterpolation/static/paper/Image_Based_Spatio_Temporal_Interpolation_for_Split_Rendering.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
                     <a href="https://derthomy.github.io/ImageBasedSpatioTemporalInterpolation/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
                     <a href="https://github.com/DerThomy/ImageBasedSpatioTemporalInterpolation"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
-                    <a href="https://youtu.be/IBHKeBGDHVg"><img style="height:30px; margin: 3.5px;" src="imgs/icons/vid.png" title="Video"></a>
-                    <a href="https://drive.google.com/file/d/1U4uUS6L-rxr1jFrJ-b991SQP63G10hkA/view"><img style="height:29px;; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png"></a>
-                    <a href="bibs/steiner2024splitrendering.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                    <a href="https://youtu.be/IBHKeBGDHVg"><img class="ai-symbol" style="height:27px; margin: 3.5px" src="imgs/icons/play-circle-fill.svg" title="Video"></a>
+                    <a href="https://drive.google.com/file/d/1U4uUS6L-rxr1jFrJ-b991SQP63G10hkA/view"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/database.svg" title="Data"></a>
+                    <a href="bibs/steiner2024splitrendering.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
                 </p>
             </div>
         </div>
 
+        <!-- VRSplat -->
+        <div class="row" style="padding-top:10pt">
+            <div class="col-md-3" onmouseout="vrsplat_stop()" onmouseover="vrsplat_start()">
+                <div class="mx-auto">
+                    <div class="one">
+                        <div class="two" id='vrsplat_image'>
+                            <video style="width:100%" muted autoplay loop>
+                                <source src="vids/vrsplat2025.mp4" type="video/mp4">Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <img src='imgs/papers/vrsplat2025.png' style="width:100%">
+                    </div>
+                    <script type="text/javascript">
+                        function vrsplat_start() {
+                            document.getElementById('vrsplat_image').style.opacity = "1";
+                        }
+
+                        function vrsplat_stop() {
+                            document.getElementById('vrsplat_image').style.opacity = "0";
+                        }
+                        vrsplat_stop()
+                    </script>
+                </div>
+            </div>
+            
+            <div class="col-md-9">
+                <span class="papertitle">VRSplat: Fast and Robust Gaussian Splatting for Virtual Reality</span>
+                <br>
+                <strong><a href="https://scholar.google.com/citations?user=LGmQ3bUAAAAJ&hl=en">Xuechang Tu</a></strong>,
+                <a href="https://r4dl.github.io/">Lukas Radl</a>,
+                <strong>Michael Steiner</strong>,
+                <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
+                <a href="https://snosixtyboo.github.io/">Bernhard Kerbl</a>,
+                <a href="http://www.cs.cmu.edu/~ftorre/">Fernando de la Torre</a>.
+                <br>
+                <em>I3D</em> <em>(PACMCGIT)</em>, 2025.
+                <br> <br>
+                <p>
+                    VRSplat combines and extend several recent advancements in 3DGS to address challenges of VR holistically.
+                    We show how the ideas of Mini-Splatting, StopThePop, and Optimal Projection can complement each other, by modifying the individual techniques and core 3DGS rasterizer.
+                </p>
+                <p style="text-align:left">
+                    <a href="https://arxiv.org/pdf/2505.10144"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
+                    <a href="https://ceka.cc/VRSplat/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
+                    <a href="https://github.com/Cekavis/VRSplat"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
+                    <a href="https://youtu.be/NS9epwIQ_mc"><img class="ai-symbol" style="height:27px; margin: 3.5px" src="imgs/icons/play-circle-fill.svg" title="Video"></a>
+                    <img class="ai-symbol" style="height:30px; margin: 3.5px; opacity: 25%" src="imgs/icons/database.svg" title="Data">
+                    <a href="bibs/tu2025vrsplat.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                </p>
+            </div>
+        </div>
 
         <!-- StopThePop -->
-        <div class="row" style="margin-top:10pt">
+        <div class="row highlight" style="padding-top:10pt">
             <div class="col-md-3" onmouseout="stopthepop_stop()" onmouseover="stopthepop_start()">
                 <div class="mx-auto">
                     <div class="one">
@@ -176,8 +264,9 @@
             </div>
             <div class="col-md-9">
                 <span class="papertitle">StopThePop: Sorted Gaussian Splatting for View-Consistent Real-Time Rendering</span>
-                <br><strong>Michael Steiner</strong>*,
-                <a href="https://r4dl.github.io/">Lukas Radl<a>*,
+                <br>
+                <strong>Michael Steiner</strong>*,
+                <strong><a href="https://r4dl.github.io/">Lukas Radl<a></strong>*,
                 <a href="https://dabeschte.github.io/">Mathias Parger</a>,
                 <a href="https://scholar.google.at/citations?user=pkqf2mgAAAAJ&hl=de">Alexander Weinrauch</a>,
                 <a href="https://snosixtyboo.github.io/">Bernhard Kerbl</a>,
@@ -193,16 +282,15 @@
                     <a href="https://arxiv.org/pdf/2402.00525.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
                     <a href="https://r4dl.github.io/StopThePop/"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons//wpage.png" title="Webpage"></a>
                     <a href="https://github.com/r4dl/StopThePop"><img class="ai-symbol" style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons//github.png" title="Code"></a>
-                    <a href="https://youtu.be/EmcXtHYhigk"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons//vid.png" title="Video"></a>
-                    <a href="https://drive.google.com/file/d/1uk49LWsVjapLokTNHbTBMS8hMi3MuNDj/view?usp=sharing"><img img="" class="ai-symbol" style="height:29px; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png"
-                            title="Data"></a>
-                    <a href="bibs/radl2024stopthepop.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                    <a href="https://youtu.be/EmcXtHYhigk"><img class="ai-symbol" style="height:27px; margin: 3.5px" src="imgs/icons/play-circle-fill.svg" title="Video"></a>
+                    <a href="https://drive.google.com/file/d/1uk49LWsVjapLokTNHbTBMS8hMi3MuNDj/view?usp=sharing"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/database.svg" title="Data"></a>
+                    <a href="bibs/radl2024stopthepop.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
                 </p>
             </div>
         </div>
 
         <!-- Frustum Volume Caching -->
-        <div class="row" style="margin-top:10pt">
+        <div class="row" style="padding-top:10pt">
             <div class="col-md-3" onmouseout="frustum_stop()" onmouseover="frustum_start()">
                 <div class="mx-auto">
                     <div class="one">
@@ -245,15 +333,15 @@
                     <a href="https://steimich96.github.io/FrustumVolumeCaching/assets/paper/FrustumVolumeCaching.pdf"><img style="height:28px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
                     <a href="https://steimich96.github.io/FrustumVolumeCaching"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
                     <a href="https://github.com/steimich96/FrustumVolumeCaching"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
-                    <a href="https://www.youtube.com/watch?v=zCjIYewmeaQ"><img style="height:30px; margin: 3.5px;" src="imgs/icons/vid.png" title="Video"></a>
-                    <a href="https://cloud.tugraz.at/index.php/s/AD9nGg6e37c9dgm"><img style="height:29px;; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png"></a>
-                    <a href="bibs/steiner2024frustum.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                    <a href="https://www.youtube.com/watch?v=zCjIYewmeaQ"><img class="ai-symbol" style="height:27px; margin: 3.5px" src="imgs/icons/play-circle-fill.svg" title="Video"></a>
+                    <a href="https://cloud.tugraz.at/index.php/s/AD9nGg6e37c9dgm"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/database.svg" title="Data"></a>
+                    <a href="bibs/steiner2024frustum.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
                 </p>
             </div>
         </div>
 
         <!-- LAENerf -->
-        <div class="row" style="margin-top:10pt">
+        <div class="row" style="padding-top:10pt">
             <div class="col-md-3" onmouseout="laenerf_stop()" onmouseover="laenerf_start()">
                 <div class="mx-auto">
                     <div class="one">
@@ -277,11 +365,9 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <a href="https://r4dl.github.io/LAENeRF/">
-                    <span class="papertitle">LAENeRF: Local Appearance Editing of Neural Radiance Fields</span>
-                </a>
+                <span class="papertitle">LAENeRF: Local Appearance Editing of Neural Radiance Fields</span>
                 <br>
-                <a href="https://r4dl.github.io/">Lukas Radl</a>,
+                <strong><a href="https://r4dl.github.io/">Lukas Radl</a></strong>,
                 <strong>Michael Steiner</strong>,
                 <a href="https://scholar.google.com/citations?user=3yD4NZgAAAAJ&hl=de">Andreas Kurz</a>,
                 <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
@@ -295,24 +381,22 @@
                     <a href="https://arxiv.org/pdf/2312.09913.pdf"><img style="height:27px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
                     <a href="https://r4dl.github.io/LAENeRF/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
                     <a href="https://github.com/r4dl/LAENeRF"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
-                    <a href="https://www.youtube.com/watch?v=HwQ1x0Fb2Qc"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/vid.png" title="Video"></a>
-                    <a href="https://drive.google.com/file/d/1y8e2q-6HJz2YcBoWqZJl9OR3NhMYVPgT/view?usp=sharing"><img style="height:29px; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png" title="Data"></a>
-                    <a href="bibs/radl2023laenerf.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                    <a href="https://www.youtube.com/watch?v=HwQ1x0Fb2Qc"><img class="ai-symbol" style="height:27px; margin: 3.5px" src="imgs/icons/play-circle-fill.svg" title="Video"></a>
+                    <a href="https://drive.google.com/file/d/1y8e2q-6HJz2YcBoWqZJl9OR3NhMYVPgT/view?usp=sharing"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/database.svg" title="Data"></a>
+                    <a href="bibs/radl2023laenerf.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
                 </p>
             </div>
         </div>
 
         <!-- Nerf-Internals -->
-        <div class="row" style="margin-top:10pt">
+        <div class="row" style="padding-top:10pt">
             <div class="col-md-3">
                 <img src="imgs/papers/nerfinternals2024.png" alt="clean-usnob" class="one">
             </div>
             <div class="col-md-9">
-                <a href="https://r4dl.github.io/nerfinternals/">
-                    <span class="papertitle">Analyzing the Internals of Neural Radiance Fields</span>
-                </a>
+                <span class="papertitle">Analyzing the Internals of Neural Radiance Fields</span>
                 <br>
-                <a href="https://r4dl.github.io/">Lukas Radl</a>,
+                <strong><a href="https://r4dl.github.io/">Lukas Radl</a></strong>,
                 <a href="https://scholar.google.com/citations?user=3yD4NZgAAAAJ&hl=de">Andreas Kurz</a>,
                 <strong>Michael Steiner</strong>,
                 <a href="https://www.markussteinberger.net/">Markus Steinberger</a>.
@@ -325,9 +409,9 @@
                     <a href="https://arxiv.org/pdf/2306.00696.pdf"><img style="height:27px; margin: 3.5px; padding: 1px" src="imgs/icons/pdf.png" title="Paper"></a>
                     <a href="https://r4dl.github.io/nerfinternals/"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/wpage.png" title="Webpage"></a>
                     <a href="https://github.com/r4dl/nerfinternals"><img style="height:27px; margin: 3.5px; padding: 1.5px" src="imgs/icons/github.png" title="Code"></a>
-                    <img style="height:30px; margin: 3.5px; opacity: 25%" src="imgs/icons/vid.png"> <a href="https://drive.google.com/file/d/1whGVEQ-LvpsgYZGxQvOA5tYcJ8N_sc-9/view">
-                        <img style="height:29px; margin: 3.5px; padding: 0.5px" src="imgs/icons/data.png" title="Data"></a>
-                    <a href="bibs/radl2024nerfinternals.bib"><img style="height:25px; margin: 3.5px; padding: 2.5px" src="imgs/icons/citation.png" title="Bibtex"></a>
+                    <img style="height:27px; margin: 3.5px; opacity: 25%" src="imgs/icons/play-circle-fill.svg" title="Video">
+                    <a href="https://drive.google.com/file/d/1whGVEQ-LvpsgYZGxQvOA5tYcJ8N_sc-9/view"><img class="ai-symbol" style="height:30px; margin: 3.5px" src="imgs/icons/database.svg" title="Data"></a>
+                    <a href="bibs/radl2024nerfinternals.bib"><img style="height:25px; margin: 3.5px; padding: .5px" src="imgs/icons/citation.png" title="Bibtex"></a>
                 </p>
             </div>
         </div>
