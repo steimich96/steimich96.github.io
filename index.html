@@ -12,6 +12,14 @@
     <!-- <link rel="shortcut icon" href="https://fakeimg.pl/16x16" type="image/x-icon"> -->
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript">
+        function showVideo(id) {
+            document.getElementById(id).style.opacity = "1";
+        }
+        function hideVideo(id) {
+            document.getElementById(id).style.opacity = "0";
+        }
+    </script>
 </head>
 
 <body>
@@ -86,7 +94,7 @@
 
         <!-- AAA-Gaussians -->
         <div class="row highlight" style="padding-top:10pt">
-            <div class="col-md-3" onmouseout="aaa_stop()" onmouseover="aaa_start()">
+            <div class="col-md-3" onmouseout="hideVideo('aaagaussians_image')" onmouseover="showVideo('aaagaussians_image')">
                 <div class="mx-auto">
                     <div class="one">
                         <div class="two" id='aaagaussians_image'>
@@ -96,15 +104,6 @@
                         </div>
                         <img src='imgs/papers/aaagaussians2025.png' style="width:100%">
                     </div>
-                    <script type="text/javascript">
-                        function aaa_start() {
-                            document.getElementById('aaagaussians_image').style.opacity = "1";
-                        }
-                        function aaa_stop() {
-                            document.getElementById('aaagaussians_image').style.opacity = "0";
-                        }
-                        aaa_stop()
-                    </script>
                 </div>
             </div>
             <div class="col-md-9">
@@ -137,7 +136,7 @@
 
         <!-- Image-Based Spatio-Temporal Interpolation -->
         <div class="row" style="padding-top:10pt">
-            <div class="col-md-3" onmouseout="splinter_stop()" onmouseover="splinter_start()">
+            <div class="col-md-3" onmouseout="hideVideo('splinter_image')" onmouseover="showVideo('splinter_image')">
                 <div class="mx-auto">
                     <div class="one">
                         <div class="two" id='splinter_image'>
@@ -147,16 +146,6 @@
                         </div>
                         <img src='imgs/papers/splinter2025.png' style="width:100%">
                     </div>
-                    <script type="text/javascript">
-                        function splinter_start() {
-                            document.getElementById('splinter_image').style.opacity = "1";
-                        }
-
-                        function splinter_stop() {
-                            document.getElementById('splinter_image').style.opacity = "0";
-                        }
-                        splinter_stop()
-                    </script>
                 </div>
             </div>            
             <div class="col-md-9">
@@ -187,7 +176,7 @@
 
         <!-- VRSplat -->
         <div class="row" style="padding-top:10pt">
-            <div class="col-md-3" onmouseout="vrsplat_stop()" onmouseover="vrsplat_start()">
+            <div class="col-md-3" onmouseout="hideVideo('vrsplat_image')" onmouseover="showVideo('vrsplat_image')">
                 <div class="mx-auto">
                     <div class="one">
                         <div class="two" id='vrsplat_image'>
@@ -197,16 +186,6 @@
                         </div>
                         <img src='imgs/papers/vrsplat2025.png' style="width:100%">
                     </div>
-                    <script type="text/javascript">
-                        function vrsplat_start() {
-                            document.getElementById('vrsplat_image').style.opacity = "1";
-                        }
-
-                        function vrsplat_stop() {
-                            document.getElementById('vrsplat_image').style.opacity = "0";
-                        }
-                        vrsplat_stop()
-                    </script>
                 </div>
             </div>
             
@@ -239,7 +218,7 @@
 
         <!-- StopThePop -->
         <div class="row highlight" style="padding-top:10pt">
-            <div class="col-md-3" onmouseout="stopthepop_stop()" onmouseover="stopthepop_start()">
+            <div class="col-md-3" onmouseout="hideVideo('stopthepop_image')" onmouseover="showVideo('stopthepop_image')">
                 <div class="mx-auto">
                     <div class="one">
                         <div class="two" id='stopthepop_image'>
@@ -249,15 +228,6 @@
                         </div>
                         <img src='imgs/papers/stopthepop2024.jpg' style="width:100%">
                     </div>
-                    <script type="text/javascript">
-                        function stopthepop_start() {
-                            document.getElementById('stopthepop_image').style.opacity = "1";
-                        }
-                        function stopthepop_stop() {
-                            document.getElementById('stopthepop_image').style.opacity = "0";
-                        }
-                        stopthepop_stop()
-                    </script>
                 </div>
             </div>
             <div class="col-md-9">
@@ -289,7 +259,7 @@
 
         <!-- Frustum Volume Caching -->
         <div class="row" style="padding-top:10pt">
-            <div class="col-md-3" onmouseout="frustum_stop()" onmouseover="frustum_start()">
+            <div class="col-md-3" onmouseout="hideVideo('frustum_image')" onmouseover="showVideo('frustum_image')">
                 <div class="mx-auto">
                     <div class="one">
                         <div class="two" id='frustum_image'>
@@ -299,16 +269,6 @@
                         </div>
                         <img src='imgs/papers/frustum2024.png' style="width:100%">
                     </div>
-                    <script type="text/javascript">
-                        function frustum_start() {
-                            document.getElementById('frustum_image').style.opacity = "1";
-                        }
-
-                        function frustum_stop() {
-                            document.getElementById('frustum_image').style.opacity = "0";
-                        }
-                        frustum_stop()
-                    </script>
                 </div>
             </div>
 
@@ -340,7 +300,7 @@
 
         <!-- LAENerf -->
         <div class="row" style="padding-top:10pt">
-            <div class="col-md-3" onmouseout="laenerf_stop()" onmouseover="laenerf_start()">
+            <div class="col-md-3" onmouseout="hideVideo('laenerf_image')" onmouseover="showVideo('laenerf_image')">
                 <div class="mx-auto">
                     <div class="one">
                         <div class="two" id='laenerf_image'>
@@ -350,16 +310,6 @@
                         </div>
                         <img src='imgs/papers/laenerf2024.png' style="width:100%">
                     </div>
-                    <script type="text/javascript">
-                        function laenerf_start() {
-                            document.getElementById('laenerf_image').style.opacity = "1";
-                        }
-
-                        function laenerf_stop() {
-                            document.getElementById('laenerf_image').style.opacity = "0";
-                        }
-                        laenerf_stop()
-                    </script>
                 </div>
             </div>
             <div class="col-md-9">
